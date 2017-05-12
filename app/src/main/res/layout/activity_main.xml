@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:src="@drawable/smartfestival"
+        android:layout_marginTop="40dp"
         />
 
     <EditText
@@ -21,9 +22,9 @@
         android:layout_height="50dp"
         android:ems="10"
         android:hint="Username"
-        android:textColorHint="#EF6C00"
+
         android:background="#E0E0E0"
-        android:layout_marginTop="45dp"/>
+        android:layout_marginTop="41dp"/>
 
     <EditText
         android:layout_width="250dp"
@@ -31,19 +32,23 @@
         android:textStyle="italic"
         android:layout_height="50dp"
         android:background="#E0E0E0"
-        android:textColorHint="#EF6C00"
+
         android:ems="10"
         android:inputType="textPassword"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="7dp"
         android:hint="Password"/>
 
 
     <Button
-        android:layout_width="250dp"
+        android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:textSize="15dp"
+        android:textColor="#E65100"
         android:text="LOGIN"
         android:id="@+id/login"
+        android:layout_marginTop="35dp"
 
         />
 
