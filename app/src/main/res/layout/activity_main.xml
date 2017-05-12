@@ -43,6 +43,7 @@
         android:layout_gravity="center"
         android:layout_height="50dp"
         android:text="LOGIN"
+        android:id="@+id/login"
 
         />
 
