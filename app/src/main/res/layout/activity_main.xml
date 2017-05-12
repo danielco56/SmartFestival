@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.daniel.smartfestival.MainActivity">
+    tools:context="com.example.daniel.smartfestival.MainActivity"
+    android:background="@android:color/white">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -20,6 +21,8 @@
         android:layout_height="50dp"
         android:ems="10"
         android:hint="Username"
+        android:textColorHint="#EF6C00"
+        android:background="#E0E0E0"
         android:layout_marginTop="45dp"/>
 
     <EditText
@@ -27,8 +30,11 @@
         android:layout_gravity="center"
         android:textStyle="italic"
         android:layout_height="50dp"
+        android:background="#E0E0E0"
+        android:textColorHint="#EF6C00"
         android:ems="10"
         android:inputType="textPassword"
+        android:layout_marginTop="5dp"
         android:hint="Password"/>
 
 
