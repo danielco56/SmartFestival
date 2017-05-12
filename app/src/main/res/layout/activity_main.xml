@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:src="@drawable/SmartFestival"
+        android:src="@drawable/smartfestival"
         />
 
     <EditText
