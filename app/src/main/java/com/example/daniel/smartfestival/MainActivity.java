@@ -1,12 +1,17 @@
 package com.example.daniel.smartfestival;
 
 import android.app.Activity;
+import android.content.ClipData;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
+
+import static android.content.ClipData.*;
+
 
 public class MainActivity extends Activity {
 
@@ -20,10 +25,23 @@ public class MainActivity extends Activity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent login= new Intent(MainActivity.this, First.class);
+                Intent login= new Intent(MainActivity.this, FirstPage.class);
                 startActivity(login);
             }
         });
+
+
+        EditText userName = (EditText) findViewById(R.id.username);
+        EditText passWord = (EditText) findViewById(R.id.password);
+
+        String nume, parola;
+
+        nume = userName.getText().toString();
+        parola = passWord.getText().toString();
+
+
+
+
 
     }
 }
