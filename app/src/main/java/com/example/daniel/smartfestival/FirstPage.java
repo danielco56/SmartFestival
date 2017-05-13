@@ -13,7 +13,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.example.daniel.smartfestival.im.*;
+
+import com.example.daniel.smartfestival.com.example.daniel.smartfestival.services.StaticDataService;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -21,6 +22,7 @@ import com.google.zxing.integration.android.IntentResult;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static android.R.attr.data;
@@ -72,13 +74,16 @@ public class FirstPage extends Activity {
         });
     }
 
-    public ArrayList<String> list = new ArrayList<>();
 
     @Override
            public void onActivityResult(int requestCode, int resultCode, Intent data) {
             IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-            while(result!= null){
-                list.add(result.getContents());
+        // golim lista ca sa nu ti se mentina datele de la o rulare la alta
+
+            if(result!= null) {
+                // adaugi in lista ce trebuie, fara sa stearga din lista.
+                StaticDataService.List.add(result.getContents());
+                Collections.reverse(StaticDataService.List);
             }
             if(result != null){
                 if(result.getContents()==null){
