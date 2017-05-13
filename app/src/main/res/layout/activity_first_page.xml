@@ -12,7 +12,7 @@
         android:layout_height="40sp"
         android:src="@drawable/userfaced"
         android:layout_margin="10dp"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
         android:id="@+id/account"/>
 
 
@@ -21,7 +21,7 @@
         android:layout_height="100sp"
         android:src="@drawable/balance"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="300dp"
         android:id="@+id/Balanta"
         />
 
@@ -38,7 +38,7 @@
         android:layout_height="100sp"
         android:src="@drawable/scan"
         android:layout_toRightOf="@+id/Balanta"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="300dp"
         android:id="@+id/clickAici"
         android:layout_marginLeft="20dp"/>
 

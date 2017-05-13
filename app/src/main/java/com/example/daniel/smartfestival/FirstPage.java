@@ -1,5 +1,6 @@
 package com.example.daniel.smartfestival;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.example.daniel.smartfestival.im.*;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -70,14 +72,13 @@ public class FirstPage extends Activity {
         });
     }
 
-    public ArrayList<String> list = new ArrayList<String>();
-
+    public ArrayList<String> list = new ArrayList<>();
 
     @Override
            public void onActivityResult(int requestCode, int resultCode, Intent data) {
             IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
             while(result!= null){
-
+                list.add(result.getContents());
             }
             if(result != null){
                 if(result.getContents()==null){
@@ -95,7 +96,7 @@ public class FirstPage extends Activity {
 
     }
 
-        }
+}
 
 
 
