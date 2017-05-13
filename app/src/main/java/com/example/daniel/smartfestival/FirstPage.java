@@ -83,7 +83,7 @@ public class FirstPage extends Activity {
             if(result!= null) {
                 // adaugi in lista ce trebuie, fara sa stearga din lista.
                 StaticDataService.List.add(result.getContents());
-                Collections.reverse(StaticDataService.List);
+                Collections.reverse(StaticDataService.List);//
             }
             if(result != null){
                 if(result.getContents()==null){
