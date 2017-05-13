@@ -4,36 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.daniel.smartfestival.FirstPage">
+    tools:context="com.example.daniel.smartfestival.FirstPage"
+    android:background="@drawable/party2">
+
 
     <TextView
-        android:layout_width="125dp"
-        android:layout_height="35dp"
-        android:text="Poze"
-        android:id="@+id/poze"
-        android:textSize="25dp"
-        android:gravity="center_horizontal"
-        android:background="@android:color/darker_gray"/>
-
-    <TextView
-        android:layout_width="130dp"
-        android:layout_height="35dp"
-        android:text="Festivale"
-        android:layout_toRightOf="@+id/poze"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:text="Festival"
         android:id="@+id/Festivale"
-        android:textSize="25dp"
+        android:textSize="28dp"
         android:gravity="center_horizontal"
-        android:background="@android:color/darker_gray"/>
+        android:background="#E65100"/>
 
     <TextView
-        android:layout_width="130dp"
-        android:layout_height="35dp"
-        android:text="Balanta"
-        android:layout_toRightOf="@+id/Festivale"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:text="Balance"
+        android:layout_alignParentRight="true"
         android:id="@+id/Balanta"
-        android:textSize="25dp"
+        android:textSize="28dp"
         android:gravity="center_horizontal"
-        android:background="@android:color/darker_gray"/>
+        android:background="#E65100"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -41,7 +33,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40sp"
-        android:text="Click Aici"
+        android:text="Click Here"
         android:textSize="30dp"
         android:id="@+id/click"
         />

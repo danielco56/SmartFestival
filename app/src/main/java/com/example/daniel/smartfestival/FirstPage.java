@@ -5,22 +5,45 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
+import org.w3c.dom.Text;
+
 import static android.R.attr.data;
 
-public class FirstPage extends AppCompatActivity {
+public class FirstPage extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_page);
 
-        Button clickAici = (Button) findViewById(R.id.click);
+        TextView clickAici = (TextView) findViewById(R.id.click);
+        TextView festivale = (TextView) findViewById(R.id.Festivale);
+        TextView balanta = (TextView) findViewById(R.id.Balanta);
+
+
+        festivale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent festivale = new Intent(FirstPage.this, Festivals.class);
+                startActivity(festivale);
+            }
+        });
+
+        balanta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent balanta = new Intent(FirstPage.this, Balance.class);
+                startActivity(balanta);
+            }
+        });
 
         final Activity activity = this;
 
