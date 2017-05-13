@@ -16,12 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FirstPage"
-            android:label="Smart Festival"/>
-        <activity android:name=".Festivals"
-            android:label="Festivals"/>
-        <activity android:name=".Balance"
-            android:label="Balance"></activity>
+        <activity
+            android:name=".FirstPage"
+            android:label="Smart Festival" />
+        <activity
+            android:name=".Balance"
+            android:label="Balance" />
+        <activity android:name=".AccountInfo"
+            android:label="Account Informations"
+            />
     </application>
 
 </manifest>

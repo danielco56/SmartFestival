@@ -34,10 +34,6 @@ public class MainActivity extends Activity {
         EditText userName = (EditText) findViewById(R.id.username);
         EditText passWord = (EditText) findViewById(R.id.password);
 
-        String nume, parola;
-
-        nume = userName.getText().toString();
-        parola = passWord.getText().toString();
 
 
 
